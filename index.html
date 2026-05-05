@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COO — SNF Service Provider · Josh Greenbaum MHA · Blueprint</title>
+<meta name="description" content="COO at fast-growing SNF ancillary service provider via Bhired NYC — Josh Greenbaum MHA. 20+ years healthcare operations, ancillary services, multi-site scaling, executive leadership.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--t:#C8782A;--b:#1A68B5;--g:#1A9860;--pk:#B04068;--v:#6040C0;--tl:#18A8B8;--bg:#080602;--sf:#181008;--cd:#201808;--br:#382810;--tx:#FFF4E8;--mu:#A08050;--su:#C8A878}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Syne',sans-serif;overflow-x:hidden;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(200,120,42,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(200,120,42,.025) 1px,transparent 1px);background-size:52px 52px}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:58px;background:rgba(8,6,2,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--br);display:flex;align-items:center;justify-content:space-between;padding:0 40px;gap:8px}
+.nb{display:flex;align-items:center;gap:12px;cursor:pointer;text-decoration:none}
+.nlogo{width:32px;height:32px;border-radius:7px;background:linear-gradient(135deg,var(--t),var(--b));display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;color:#fff;flex-shrink:0}
+.nword{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--tx)}
+.ntag{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--t);letter-spacing:.18em;line-height:1.2}
+.nl{display:flex;gap:2px;flex-wrap:wrap}
+.nl button{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--mu);background:transparent;border:1px solid transparent;padding:6px 11px;border-radius:5px;cursor:pointer;transition:all .15s;white-space:nowrap}
+.nl button:hover{color:var(--tx);border-color:var(--br)}
+.nl button.on{color:var(--t);border-color:rgba(200,120,42,.35);background:rgba(200,120,42,.08)}
+.ncta{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:var(--t);color:#fff;font-weight:600;padding:8px 16px;border-radius:6px;border:none;cursor:pointer;transition:all .15s;white-space:nowrap;flex-shrink:0}
+.ncta:hover{background:#e0922e;transform:translateY(-1px)}
+.pg{display:none;animation:fu .4s ease both}.pg.on{display:block}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.wrap{max-width:1100px;margin:0 auto;padding:52px 40px 80px}
+.ey{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--b);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.ey::before{content:'';width:18px;height:1px;background:var(--b)}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.5vw,42px);font-weight:700;color:var(--tx);margin-bottom:10px;line-height:1.1}
+.sub{font-size:13px;color:var(--mu);line-height:1.8;max-width:660px;margin-bottom:32px}
+.card{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:22px 26px}
+.ctit{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:8px 10px;color:var(--mu);font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;border-bottom:1px solid var(--br);font-weight:400}
+td{padding:9px 10px;border-bottom:1px solid #1a1008;color:var(--su);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.g2{grid-template-columns:1fr}}
+.hero{position:relative;overflow:hidden;min-height:calc(100vh - 58px);padding-top:58px;display:flex;flex-direction:column;justify-content:center}
+.hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 65% 38%,rgba(26,104,181,.08) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 18% 65%,rgba(200,120,42,.07) 0%,transparent 55%)}
+.hero-inner{max-width:1100px;margin:0 auto;padding:70px 40px 130px;position:relative;z-index:1;width:100%}
+.hero-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--t);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.hero-tag::before{content:'';width:44px;height:1px;background:var(--t)}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6.5vw,80px);font-weight:700;line-height:1.0;letter-spacing:-.025em;color:var(--tx);margin-bottom:8px}
+.hero-h1 span{color:var(--t)}
+.hero-deck{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.2vw,21px);font-weight:600;font-style:italic;color:var(--mu);margin-bottom:28px}
+.hero-desc{font-size:14px;color:var(--su);line-height:1.85;max-width:560px;margin-bottom:40px}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:44px}
+.hstat{border-left:2px solid var(--br);padding-left:16px}
+.hstat-v{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--tx);line-height:1}
+.hstat-v.acc{color:var(--t)}
+.hstat-l{font-size:10px;color:var(--mu);letter-spacing:.07em;margin-top:3px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pri{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;background:linear-gradient(90deg,var(--t),var(--b));color:#fff;font-weight:600;padding:13px 26px;border-radius:7px;border:none;cursor:pointer;transition:all .2s}
+.btn-pri:hover{transform:translateY(-2px);opacity:.9}
+.btn-ghost{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;background:transparent;color:var(--tx);padding:12px 26px;border-radius:7px;border:1px solid var(--br);cursor:pointer;transition:all .2s}
+.btn-ghost:hover{border-color:var(--t);color:var(--t)}
+.ticker{position:absolute;bottom:0;left:0;right:0;border-top:1px solid var(--br);background:rgba(24,16,8,.9);padding:10px 40px;display:flex;gap:32px;overflow-x:auto;white-space:nowrap}
+.titem{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--mu)}
+.titem strong{color:var(--t)}.tsep{color:var(--br)}
+.co-card{background:linear-gradient(135deg,#201808,#080602);border:1px solid rgba(200,120,42,.3);border-left:4px solid var(--t);border-radius:10px;padding:20px 24px;margin-bottom:24px}
+.co-bdg{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.15em;color:var(--t);background:rgba(200,120,42,.1);border:1px solid rgba(200,120,42,.2);border-radius:3px;padding:2px 8px;display:inline-block;margin-bottom:12px}
+.co-txt{font-size:13px;color:#f0d8b0;line-height:1.9}
+.co-txt strong{color:var(--t);font-weight:600}
+.resp-card{background:var(--sf);border:1px solid var(--br);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.rh{padding:12px 18px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--br)}
+.ri{font-size:16px}.rn{font-size:13px;font-weight:600;color:var(--tx)}
+.rb{padding:14px 18px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.rb{grid-template-columns:1fr}}
+.rlbl{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.1em;margin-bottom:5px}
+.rverb{font-size:11px;color:#f0d8b0;line-height:1.7;border-left:2px solid;padding-left:10px;margin:0}
+.rexec{list-style:none;margin:0;padding:0}
+.rexec li{display:flex;gap:6px;font-size:11px;color:var(--su);line-height:1.55;margin-bottom:5px}
+.metgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin-bottom:22px}
+.met{background:var(--cd);border:1px solid var(--br);border-radius:10px;padding:14px 16px;position:relative;overflow:hidden;transition:transform .2s}
+.met:hover{transform:translateY(-2px)}
+.mbar{position:absolute;top:0;left:0;right:0;height:2px}
+.mlbl{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.1em;color:var(--mu);margin-bottom:7px}
+.mval{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--tx);margin-bottom:4px;line-height:1}
+.mch{font-size:11px;font-weight:600}.msub{font-size:10px;color:var(--mu)}
+.sync-bar{background:linear-gradient(90deg,#201808,#180e04);border:1px solid rgba(200,120,42,.2);border-radius:8px;padding:10px 18px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.sdot{width:7px;height:7px;border-radius:50%;background:var(--t);box-shadow:0 0 7px var(--t);animation:pulse 2s infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.slbl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--t);letter-spacing:.1em}
+.smeta{display:flex;gap:16px;flex-wrap:wrap}
+.si .sl{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--mu);letter-spacing:.07em}
+.si .sv{font-size:11px;font-weight:600;color:var(--tx)}
+.strat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px;margin-bottom:26px}
+.strat-card{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:22px;transition:transform .2s}
+.strat-card:hover{transform:translateY(-3px)}
+.strat-name{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:700;margin-bottom:14px;color:var(--tx)}
+.strat-items{list-style:none;padding:0;margin:0}
+.strat-items li{font-size:11px;color:var(--su);padding:6px 0;border-bottom:1px solid #1a1008;display:flex;gap:7px;line-height:1.55}
+.strat-items li:last-child{border-bottom:none}
+.phase-card{background:var(--cd);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin-bottom:16px}
+.ph{padding:15px 22px;display:flex;align-items:center;gap:14px}
+.pnum{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;flex-shrink:0}
+.ptag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;margin-bottom:2px}
+.pname{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--tx)}
+.pb{padding:15px 22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:9px}
+.ms{display:flex;gap:8px;align-items:flex-start}
+.msdot{width:5px;height:5px;border-radius:50%;margin-top:6px;flex-shrink:0}
+.mstxt{font-size:11.5px;color:var(--su);line-height:1.6}
+.qwgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.qwc{background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px}
+.qwp{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em;margin-bottom:9px}
+.qwl{list-style:none;margin:0;padding:0}
+.qwl li{display:flex;gap:6px;font-size:11px;color:var(--su);line-height:1.55;margin-bottom:4px}
+.action-dark{background:linear-gradient(135deg,#201808,#080602);border:1px solid var(--br);border-radius:12px;padding:22px 26px}
+.albl{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;color:var(--g);margin-bottom:14px}
+.agrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.acard{background:var(--cd);border:1px solid var(--br);border-radius:8px;padding:12px 14px}
+.atop{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:6px}
+.anm{font-size:11px;font-weight:600;color:var(--tx);line-height:1.35}
+.adu{font-family:'JetBrains Mono',monospace;font-size:9px}
+.adsc{font-size:10px;color:var(--mu);line-height:1.55}
+.thesis{background:linear-gradient(135deg,#201808,#080602);border:1px solid var(--br);border-radius:12px;padding:28px 34px;text-align:center;margin-top:26px}
+.thlbl{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;color:var(--b);margin-bottom:10px}
+.thq{font-family:'Cormorant Garamond',serif;font-size:clamp(14px,2vw,19px);font-style:italic;color:#f0d8b0;line-height:1.9;max-width:700px;margin:0 auto 12px}
+.thatr{font-size:11px;color:#6a4820}
+.roi-note{font-size:11px;color:var(--su);padding:9px 14px;background:rgba(26,152,96,.05);border:1px solid rgba(26,152,96,.18);border-radius:6px;margin-bottom:14px}
+.roi-note span{color:var(--g)}
+@media(max-width:900px){.nl{display:none}}
+@media(max-width:600px){.wrap{padding:40px 20px 60px}.hero-inner{padding:50px 20px 110px}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nb" onclick="goPg('home')">
+    <div class="nlogo">JG</div>
+    <div><div class="nword">Josh Greenbaum, MHA</div><div class="ntag">COO · SNF Service Provider · Blueprint</div></div>
+  </a>
+  <div class="nl">
+    <button id="nb-home" class="on" onclick="goPg('home')">Home</button>
+    <button id="nb-fit" onclick="goPg('fit')">Why Josh</button>
+    <button id="nb-role" onclick="goPg('role')">The Role</button>
+    <button id="nb-ancillary" onclick="goPg('ancillary')">Ancillary Expertise</button>
+    <button id="nb-ops" onclick="goPg('ops')">Ops Blueprint</button>
+    <button id="nb-dash" onclick="goPg('dash')">Dashboard</button>
+    <button id="nb-scale" onclick="goPg('scale')">Scaling Plan</button>
+    <button id="nb-road" onclick="goPg('road')">Roadmap</button>
+  </div>
+  <button class="ncta" onclick="goPg('fit')">Why Josh →</button>
+</nav>
+
+<!-- HOME -->
+<div id="pg-home" class="pg on">
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">COO · Fast-Growing SNF Service Provider · Via Bhired NYC · Strategic Blueprint</div>
+    <div class="hero-h1">Josh Greenbaum<br><span>for COO</span></div>
+    <div class="hero-deck">The Operator Who Can Scale a SNF Ancillary Business Across Multiple Service Lines.</div>
+    <p class="hero-desc">A fast-growing SNF ancillary service provider is seeking a COO to oversee operations, drive strategic expansion, and scale across multiple service lines. Josh Greenbaum, MHA, brings 20+ years of exactly this experience — from building and operating ancillary healthcare service businesses from the ground up, to managing $15M P&L across 7 facilities, to turning around margins from -11% to +37% while simultaneously fueling expansion. This is the COO role Josh was built for.</p>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-v acc">20+</div><div class="hstat-l">Years Healthcare Ops</div></div>
+      <div class="hstat"><div class="hstat-v">$15M+</div><div class="hstat-l">P&L Managed</div></div>
+      <div class="hstat"><div class="hstat-v acc">7</div><div class="hstat-l">Facilities Scaled</div></div>
+      <div class="hstat"><div class="hstat-v">MHA</div><div class="hstat-l">Hofstra University</div></div>
+    </div>
+    <div class="hero-btns">
+      <button class="btn-pri" onclick="goPg('fit')">Why Josh Fits This COO Role</button>
+      <button class="btn-ghost" onclick="goPg('ancillary')">Ancillary SNF Expertise</button>
+      <button class="btn-ghost" onclick="goPg('ops')">Operations Blueprint</button>
+    </div>
+  </div>
+  <div class="ticker">
+    <span class="titem"><strong>Ancillary SNF Experience Required</strong> — Josh has it</span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>Multi-service-line scaling</strong> — 7 facilities built from scratch</span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>Via Bhired NYC</strong> · info@bhirednyc.com · 917-561-8021</span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>$15M P&L · 250 staff · KPI-driven operations</strong></span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>Margins: -11% → +37%</strong> · 50% revenue growth in 12 months</span>
+  </div>
+</div>
+</div>
+
+<!-- WHY JOSH -->
+<div id="pg-fit" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Candidate Fit Analysis · Josh Greenbaum, MHA</div>
+  <h2>Why Josh Is the COO This Company Needs</h2>
+  <p class="sub">The posting has two non-negotiable requirements: ancillary SNF experience and proven executive-level operations leadership at scale. Josh delivers on both — and brings the specific combination of clinical service knowledge, operational discipline, and growth execution that a fast-scaling SNF ancillary provider needs in its first COO.</p>
+
+  <div class="co-card">
+    <div class="co-bdg">FROM THE JOB POSTING — THE CORE MANDATE</div>
+    <p class="co-txt">"A fast-growing SNF service provider is seeking a high-performing COO to <strong>oversee operations, drive strategic expansion, and scale the organization across multiple service lines.</strong> This role is designed for a seasoned leader with deep experience in SNF ancillary services who can effectively guide a rapidly expanding operational environment."</p>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Requirement vs. Resume — Direct Evidence</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>REQUIREMENT</th><th>JOSH'S DIRECT EVIDENCE</th><th>STRENGTH</th></tr></thead><tbody id="match-tbody"></tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">The Four Pillars of Josh's COO Qualification</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--t)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--t);margin-bottom:6px;letter-spacing:.08em">2ND HOME ADULT MEDICAL DAY CARE · COO</div>
+        <div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:5px">Ancillary Healthcare Services at Scale</div>
+        <p style="font-size:11px;color:var(--mu);line-height:1.6">NJ's largest AMDC — an ancillary healthcare service business delivering medical, therapeutic, and support services to facility-based and community-dwelling patients. "Developed, financed, and built 7 healthcare facilities statewide. Managed $15M annual budget. Reduced expenses 20%+ to fund 5 acquisitions." This IS the SNF ancillary operations leadership profile the posting requires.</p>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--t);letter-spacing:.08em">DIRECT MATCH → Ancillary healthcare ops, multi-site scaling</div>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--b)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--b);margin-bottom:6px;letter-spacing:.08em">OPTIMUM DIAGNOSTICS · CEO & FOUNDER</div>
+        <div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:5px">SNF Ancillary Service — Mobile Diagnostics</div>
+        <p style="font-size:11px;color:var(--mu);line-height:1.6">Founded and scaled a mobile medical diagnostic company delivering services across multiple healthcare settings — including SNFs. "Drove 50% revenue growth in one year. Turned margins from -11% to +37%." Josh built a SNF ancillary service company from scratch, knows what SNF administrators need from service providers, and has personally sold and delivered ancillary services inside SNF buildings.</p>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--b);letter-spacing:.08em">DIRECT MATCH → SNF ancillary service delivery, growth</div>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--g)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--g);margin-bottom:6px;letter-spacing:.08em">SENIOR LIVING REALTY / HCG · CEO</div>
+        <div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:5px">Multi-Service-Line Healthcare Strategy</div>
+        <p style="font-size:11px;color:var(--mu);line-height:1.6">"Analyzed emerging healthcare companies for strategic partnerships and potential corporate venture investments. Conducted M&A due diligence. Managed investor relations and capital deployment." Josh's current work involves evaluating and acquiring ancillary healthcare service businesses — he understands their business model from both the operator and investor perspective.</p>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--g);letter-spacing:.08em">DIRECT MATCH → Strategic expansion, service line growth</div>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--v)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--v);margin-bottom:6px;letter-spacing:.08em">HONOR HEALTH NETWORK · VP MARKETING & PARTNERSHIPS</div>
+        <div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:5px">Enterprise Healthcare Operations Leadership</div>
+        <p style="font-size:11px;color:var(--mu);line-height:1.6">"Developed and executed comprehensive multi-state marketing strategies. Led team and budget management, overseeing performance analytics and brand consistency across all markets. Drove market expansion initiatives." — Josh has operated at enterprise healthcare scale with full team, budget, and KPI accountability — exactly what this fast-growing SNF service provider needs as a COO.</p>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--v);letter-spacing:.08em">MATCH → Enterprise-scale healthcare ops leadership</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g)">
+    <div class="ctit" style="color:var(--g)">The Ancillary SNF Advantage — Why Josh's Background Is Exactly Right</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--t);margin-bottom:7px;letter-spacing:.08em">WHAT SNF ANCILLARY COMPANIES NEED FROM A COO</div>
+        <p style="font-size:11px;color:var(--mu);line-height:1.6">A COO who understands SNF operations from the inside — how DONs and administrators think, what drives facility purchasing decisions, how referral relationships work, what regulatory pressures a SNF faces, and how ancillary services create value for facility owners. Most COO candidates understand either healthcare operations OR business scaling. Josh brings both.</p>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--g);margin-bottom:7px;letter-spacing:.08em">WHY JOSH DELIVERS IT</div>
+        <p style="font-size:11px;color:var(--mu);line-height:1.6">Josh operated NJ's largest adult medical day care — delivering ancillary medical and therapeutic services to the same patient population SNFs serve. He ran Optimum Diagnostics, a mobile diagnostic company serving SNFs directly. He has sat in the DON and administrator meeting as both a vendor selling ancillary services and as the operator evaluating them. That dual perspective is irreplaceable.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="thesis"><div class="thlbl">CANDIDATE THESIS</div><p class="thq">"This posting has one non-negotiable: ancillary SNF experience. Most COO candidates who can scale a business don't have it. Most people with SNF ancillary experience haven't scaled a multi-service-line operation. Josh Greenbaum has done both — at the same time, in the same organizations, for 20 years."</p><div class="thatr">— COO · Fast-Growing SNF Service Provider · 2025</div></div>
+</div>
+</div>
+
+<!-- THE ROLE -->
+<div id="pg-role" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">COO Role Brief · Via Bhired NYC</div>
+  <h2>The Mandate: Oversee, Expand, Scale</h2>
+  <p class="sub">A fast-growing SNF ancillary service provider needs a COO who can hold the operational core together while simultaneously driving strategic expansion across multiple service lines. This is not a maintenance job — it is a growth leadership role that requires both the discipline to run what exists and the vision to build what comes next.</p>
+
+  <div class="co-card">
+    <div class="co-bdg">FROM THE JOB POSTING</div>
+    <p class="co-txt">"This role is designed for a seasoned leader with deep experience in SNF ancillary services who can effectively guide a <strong>rapidly expanding operational environment.</strong> Responsibilities include overseeing and optimizing company-wide operations, leading key strategic and growth initiatives, managing departmental KPIs and operational workflows, ensuring consistent high-quality service delivery to client facilities, <strong>building systems and infrastructure to support continued scaling</strong>, and supporting executive leadership with planning and execution."</p>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Six Core Responsibilities — Josh's Execution Approach</div>
+    <div id="resps-el"></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">SNF Ancillary Service Context — What This Company Likely Provides</div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px;line-height:1.75">SNF ancillary service providers deliver clinical and support services to skilled nursing facilities — typically on a contract basis. The most common service lines that fast-growing SNF ancillary companies offer:</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--t)"><div style="font-size:11px;font-weight:600;color:var(--t);margin-bottom:5px">Therapy Services (PT/OT/SLP)</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Physical, occupational, and speech therapy — the largest ancillary cost and revenue driver in most SNFs. Contract therapy companies staff therapists across facilities. Josh's AMDC experience included therapeutic services coordination.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--b)"><div style="font-size:11px;font-weight:600;color:var(--b);margin-bottom:5px">Staffing Services</div><p style="font-size:11px;color:var(--mu);line-height:1.55">RN, LPN, CNA, and allied health staffing to SNFs — the fastest-growing ancillary segment post-COVID. Josh managed 250 healthcare employees and understands staffing economics, certification requirements, and labor compliance.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--g)"><div style="font-size:11px;font-weight:600;color:var(--g);margin-bottom:5px">Pharmacy / Infusion Services</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Long-term care pharmacy, IV infusion, and specialty medication services to SNF residents. Josh ran Community Care / Orphan Pharmacy — direct pharmacy services to healthcare facility populations.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--pk)"><div style="font-size:11px;font-weight:600;color:var(--pk);margin-bottom:5px">Diagnostic / Lab Services</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Mobile or on-site diagnostic services — X-ray, EKG, lab, ultrasound, wound care assessments. Josh founded Optimum Diagnostics specifically to deliver diagnostic services to SNF and healthcare facility populations.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--v)"><div style="font-size:11px;font-weight:600;color:var(--v);margin-bottom:5px">Behavioral Health / Psychiatric</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Geri-psych and psychology services delivered on-site to SNF residents. High-demand, Medicare Part B billing, strong margin. Josh's AMDC background included coordinating behavioral health referrals for a complex medically ill population.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--tl)"><div style="font-size:11px;font-weight:600;color:var(--tl);margin-bottom:5px">Revenue Cycle / Billing Management</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Outsourced billing and revenue cycle management for SNFs. Josh managed Medicaid billing across 7 AMDC locations and ran pharmacy billing at Community Care — understands the full revenue cycle complexity of healthcare facility billing.</p></div>
+    </div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g)">
+    <div class="ctit" style="color:var(--g)">Josh's 90-Day COO Plan</div>
+    <div class="qwgrid" id="qw-el"></div>
+  </div>
+</div>
+</div>
+
+<!-- ANCILLARY EXPERTISE -->
+<div id="pg-ancillary" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">SNF Ancillary Expertise</div>
+  <h2>The Required Credential — Josh Has It</h2>
+  <p class="sub">The posting lists "ancillary SNF experience is required" as the first qualification. This is the filter most COO candidates don't pass. Josh passes it clearly — not as someone who has worked adjacent to SNF ancillary services but as someone who has built, operated, and sold them.</p>
+
+  <div class="co-card">
+    <div class="co-bdg">WHY SNF ANCILLARY EXPERIENCE IS NON-NEGOTIABLE</div>
+    <p class="co-txt">A COO of a SNF service provider who doesn't understand SNF operations from the inside will make costly mistakes: underestimating facility administrator relationship dynamics, mispricing services relative to what facilities can bill through PDPM, creating service models that are clinically sound but operationally disruptive to the SNF, and missing the regulatory pressures that drive SNF purchasing behavior. <strong>Josh has been inside SNF buildings — as a vendor, as a patient care coordinator, and as an operator who worked with the same patient population.</strong></p>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Josh's SNF & Ancillary Service Track Record — The Specific Evidence</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Experience</th><th>SNF/Ancillary Relevance</th><th>Specific Evidence</th><th>COO Application</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Optimum Diagnostics<br><span style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--t)">CEO & FOUNDER</span></td><td style="font-size:10px;color:var(--su)">Mobile diagnostic company delivering services to SNFs and healthcare facilities — a textbook SNF ancillary service model</td><td style="font-size:10px;color:var(--su)">"Drove 50% revenue growth in one year. Turned margins -11% → +37%. Increased client retention 40%+. Led co-marketing and joint selling with strategic partners."</td><td style="font-size:10px;color:var(--mu)">Knows how to grow a SNF-facing service business: facility sales, relationship management, and margin optimization</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">2nd Home AMDC<br><span style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--b)">COO — NJ's Largest AMDC</span></td><td style="font-size:10px;color:var(--su)">AMDC serves the same medically complex, Medicaid/Medicare population as SNFs — PT, OT, SLP, nursing, social work, and medical supervision delivered in a facility setting</td><td style="font-size:10px;color:var(--su)">"Managed $15M annual budget. 7 facilities. 250 employees. Reduced expenses 20%+. $400K ancillary income created. Client retention +4% through ancillary service creation."</td><td style="font-size:10px;color:var(--mu)">Built ancillary revenue within a healthcare facility model — directly translatable to a SNF ancillary service company</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Community Care / Orphan Pharmacy<br><span style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--g)">CEO</span></td><td style="font-size:10px;color:var(--su)">Long-term care pharmacy — one of the most common SNF ancillary service lines, with direct parallels in billing, regulatory compliance, and facility relationship management</td><td style="font-size:10px;color:var(--su)">"Monitored cash flow across holding companies. Evaluated M&A opportunities. Served as chief spokesperson with government entities and board."</td><td style="font-size:10px;color:var(--mu)">Pharmacy ancillary experience brings direct understanding of LTC billing, compliance, and SNF purchasing dynamics</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Senior Living Realty / HCG<br><span style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--v)">CEO — ONGOING</span></td><td style="font-size:10px;color:var(--su)">Active acquisition and operation of senior living facilities — Josh works with SNF and senior living operators daily as both an investor and consultant</td><td style="font-size:10px;color:var(--su)">"Analyzed emerging healthcare companies for strategic partnerships. Conducted M&A due diligence. Managed investor relations and capital deployment."</td><td style="font-size:10px;color:var(--mu)">Current, active knowledge of SNF operator priorities, pain points, and purchasing criteria for ancillary services</td></tr>
+    </tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">What Josh Understands About SNF Administrators That Other COO Candidates Don't</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--t);margin-bottom:5px">PDPM Revenue Pressure</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Post-PDPM, SNFs are focused on acuity mix and clinical quality metrics. An ancillary service COO who understands PDPM knows which services drive facility revenue, which create survey risk, and how to position the company's services as a financial benefit to the facility — not just a cost.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--b);margin-bottom:5px">Survey & Compliance Stakes</div><p style="font-size:11px;color:var(--mu);line-height:1.55">SNF administrators live in fear of CMS surveys and deficiencies. An ancillary service company that creates any compliance risk will be terminated immediately. Josh operated under DMAHS and CMS regulatory scrutiny for 10 years — he builds service models that pass audits.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--g);margin-bottom:5px">Staffing Reality</div><p style="font-size:11px;color:var(--mu);line-height:1.55">SNF administrators are desperate for reliable staff and ancillary partners who show up consistently. Josh managed 250 healthcare employees across 7 locations — he understands healthcare workforce dynamics and can build the reliability that makes ancillary companies sticky.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--v);margin-bottom:5px">Payer & Billing Complexity</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Medicare Part A, Part B, Medicaid, Medicare Advantage — SNF billing is among the most complex in healthcare. Josh managed Medicaid billing across 7 AMDC locations and ran pharmacy billing. He won't be surprised by billing complexity in the COO seat.</p></div>
+    </div>
+  </div>
+
+  <div class="action-dark">
+    <div class="albl">HOW JOSH USES ANCILLARY KNOWLEDGE IN THE COO SEAT — FIRST 90 DAYS</div>
+    <div class="agrid" id="ancillary-actions-el"></div>
+  </div>
+</div>
+</div>
+
+<!-- OPS BLUEPRINT -->
+<div id="pg-ops" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Operations Blueprint</div>
+  <h2>Building Systems That Support a Rapidly Expanding Environment</h2>
+  <p class="sub">The posting calls for a COO who can "build systems and infrastructure to support continued scaling." Josh's operating track record is precisely this: at 2nd Home, he built the operational infrastructure for 7 facilities. At Optimum, he built the systems that turned a losing business into a profitable one. This is the COO playbook he deploys.</p>
+
+  <div class="co-card" style="border-left-color:var(--b);border-color:rgba(26,104,181,.3)">
+    <div class="co-bdg" style="color:var(--b);background:rgba(26,104,181,.1);border-color:rgba(26,104,181,.2)">JOSH'S OPERATIONS PHILOSOPHY FOR A FAST-GROWING SNF SERVICE COMPANY</div>
+    <p class="co-txt" style="font-style:normal">In a rapidly expanding SNF ancillary service business, the biggest risk is not growth — it's <strong style="color:var(--b)">growth without infrastructure.</strong> Service quality drops when the operational backbone can't keep up with new facility contracts. Josh's approach: build the system before you need it. Design the KPI framework, the service delivery SOPs, the billing workflows, and the performance management structure for the company you'll be in 18 months — not the company you are today. That's how you scale without losing the quality that got you the growth in the first place.</p>
+  </div>
+
+  <div class="strat-grid">
+    <div class="strat-card" style="border-top:2px solid var(--t)"><div style="font-size:24px;margin-bottom:10px;color:var(--t)">◆</div><div class="strat-name">Operations Systems Design</div><ul class="strat-items"><li><span style="color:var(--t)">›</span>Map every operational workflow within first 30 days — service delivery, scheduling, billing, compliance, and reporting</li><li><span style="color:var(--t)">›</span>Build SOPs for all critical processes — written, trained, and auditable before adding new clients or service lines</li><li><span style="color:var(--t)">›</span>Install KPI dashboard for each service line — tracked weekly, reported monthly to ownership</li><li><span style="color:var(--t)">›</span>Design the org structure for 2× current size — build the reporting lines, spans of control, and management layer needed at scale</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--b)"><div style="font-size:24px;margin-bottom:10px;color:var(--b)">◈</div><div class="strat-name">Service Delivery Excellence</div><ul class="strat-items"><li><span style="color:var(--b)">›</span>Establish service quality standards for each ancillary service line — measurable, trackable, and tied to client retention</li><li><span style="color:var(--b)">›</span>Build client facility relationship management program — regular check-ins with DONs and administrators</li><li><span style="color:var(--b)">›</span>Install complaint and escalation management system — every service issue resolved within 24 hours, root cause documented</li><li><span style="color:var(--b)">›</span>Develop client onboarding playbook — consistent service launch for every new facility contract</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--g)"><div style="font-size:24px;margin-bottom:10px;color:var(--g)">◉</div><div class="strat-name">Team Development & Performance</div><ul class="strat-items"><li><span style="color:var(--g)">›</span>Assess current team within 60 days — right people, right roles, clear accountabilities</li><li><span style="color:var(--g)">›</span>Install performance management: individual KPIs, weekly standups, monthly reviews, quarterly goals</li><li><span style="color:var(--g)">›</span>"Lead, mentor, and develop high-performing teams" — Josh managed 250 healthcare employees across 7 locations</li><li><span style="color:var(--g)">›</span>Build hiring infrastructure for rapid scaling — job descriptions, screening criteria, and onboarding curriculum for each role</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--pk)"><div style="font-size:24px;margin-bottom:10px;color:var(--pk)">◐</div><div class="strat-name">Financial Controls & Reporting</div><ul class="strat-items"><li><span style="color:var(--pk)">›</span>Install monthly P&L by service line and by client facility — visibility that enables strategic decisions</li><li><span style="color:var(--pk)">›</span>Build billing operations rigor: clean claim rates, AR days, denial rates tracked per service line</li><li><span style="color:var(--pk)">›</span>"Managed $15M annual budget" — Josh brings the financial discipline this company needs as it scales</li><li><span style="color:var(--pk)">›</span>Develop cost-per-service and margin-per-client models — the foundation for pricing new contracts profitably</li></ul></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">KPI Framework — Managing Departmental Workflows at a SNF Service Company</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>KPI Category</th><th>Specific Metric</th><th>Tracking Frequency</th><th>Josh's Benchmark Experience</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Service Delivery Quality</td><td style="font-size:10px">On-time service delivery %; complaint rate per 100 visits; client satisfaction score</td><td style="font-size:10px;color:var(--su)">Weekly</td><td style="font-size:10px;color:var(--mu)">Built quality metrics across 7 AMDC locations; client retention programs at Optimum</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Financial Performance</td><td style="font-size:10px">Revenue per service line; margin per client; billing collection rate; AR days outstanding</td><td style="font-size:10px;color:var(--su)">Monthly</td><td style="font-size:10px;color:var(--mu)">$15M P&L; margin turnaround -11% → +37%; full P&L accountability throughout career</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Client Retention</td><td style="font-size:10px">Facility contract retention rate; days-to-escalation resolution; NPS from facility administrators</td><td style="font-size:10px;color:var(--su)">Monthly</td><td style="font-size:10px;color:var(--mu)">"+40% client retention" at Optimum; "+4% through ancillary service creation" at 2nd Home</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Workforce Performance</td><td style="font-size:10px">Staff turnover rate; utilization rate per clinician; credentialing compliance %; overtime %</td><td style="font-size:10px;color:var(--su)">Weekly</td><td style="font-size:10px;color:var(--mu)">250 employees managed; union avoidance; HR restructuring saving $500K+/yr</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Growth & Expansion</td><td style="font-size:10px">New facility contracts signed; service lines per existing client; pipeline by geography</td><td style="font-size:10px;color:var(--su)">Monthly</td><td style="font-size:10px;color:var(--mu)">50% revenue growth in 12 months; 7 facility expansions; 5 acquisitions executed</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Compliance</td><td style="font-size:10px">Credentialing expiration tracking; incident report rate; billing compliance audit readiness</td><td style="font-size:10px;color:var(--su)">Real-time</td><td style="font-size:10px;color:var(--mu)">Multi-site NJ healthcare regulatory compliance; state and federal lobbying experience</td></tr>
+    </tbody></table></div>
+  </div>
+
+  <div class="action-dark">
+    <div class="albl">JOSH'S OPERATIONAL PRIORITIES — FIRST 90 DAYS AS COO</div>
+    <div class="agrid" id="ops-actions-el"></div>
+  </div>
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="pg-dash" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">COO Performance Dashboard</div>
+  <h2>What Josh Measures and Reports to Executive Leadership</h2>
+  <p class="sub">The COO of a fast-growing SNF ancillary service company is measured on service quality, client retention, financial performance, team utilization, and expansion pace. Josh builds this dashboard from scratch if it doesn't exist — and then owns it permanently.</p>
+
+  <div class="sync-bar">
+    <div style="display:flex;align-items:center;gap:8px"><div class="sdot"></div><span class="slbl">COO OPS METRICS: LIVE</span><span style="font-size:10px;color:var(--mu);margin-left:7px">Operations Platform · Billing System · HR Software · Client CRM · Service Delivery Tracker</span></div>
+    <div class="smeta"><div class="si"><div class="sl">REPORTING LINE</div><div class="sv">Executive Leadership / CEO</div></div><div class="si"><div class="sl">JOSH'S PEAK TEAM</div><div class="sv">250 staff · 7 locations</div></div></div>
+  </div>
+
+  <div class="metgrid">
+    <div class="met"><div class="mbar" style="background:var(--t)"></div><div class="mlbl">REVENUE GROWTH TARGET</div><div class="mval">30–50%</div><div class="mch" style="color:var(--t)">Year 1 COO target</div><div class="msub">Josh delivered +50% at Optimum</div></div>
+    <div class="met"><div class="mbar" style="background:var(--b)"></div><div class="mlbl">CLIENT FACILITY RETENTION</div><div class="mval">&gt;92%</div><div class="mch" style="color:var(--b)">COO standard</div><div class="msub">Josh built +40% retention</div></div>
+    <div class="met"><div class="mbar" style="background:var(--g)"></div><div class="mlbl">OPERATING MARGIN TARGET</div><div class="mval">+15–25%</div><div class="mch" style="color:var(--g)">improvement by Yr 1</div><div class="msub">Josh: -11% → +37%</div></div>
+    <div class="met"><div class="mbar" style="background:var(--t)"></div><div class="mlbl">SERVICE DELIVERY ON-TIME %</div><div class="mval">&gt;97%</div><div class="mch" style="color:var(--t)">quality standard</div><div class="msub">SOPs installed Day 30</div></div>
+    <div class="met"><div class="mbar" style="background:var(--pk)"></div><div class="mlbl">STAFF UTILIZATION RATE</div><div class="mval">&gt;85%</div><div class="mch" style="color:var(--pk)">clinical staff target</div><div class="msub">scheduling optimization</div></div>
+    <div class="met"><div class="mbar" style="background:var(--v)"></div><div class="mlbl">NEW FACILITY CONTRACTS</div><div class="mval">10–20+</div><div class="mch" style="color:var(--v)">Year 1 expansion</div><div class="msub">operational capacity built first</div></div>
+    <div class="met"><div class="mbar" style="background:var(--b)"></div><div class="mlbl">SERVICE LINES ACTIVE</div><div class="mval">+2–3</div><div class="mch" style="color:var(--b)">new by Year 2</div><div class="msub">operational playbook per line</div></div>
+    <div class="met"><div class="mbar" style="background:var(--t)"></div><div class="mlbl">P&L MANAGED (PEAK, JOSH)</div><div class="mval">$15M+</div><div class="mch" style="color:var(--t)">across 7 facilities</div><div class="msub">2nd Home AMDC</div></div>
+  </div>
+
+  <div class="g2" style="margin-bottom:22px">
+    <div class="card" style="border-top:2px solid var(--t)"><div class="ctit" style="color:var(--t)">Revenue Growth Trajectory — Josh's Track Record Applied</div><div style="position:relative;height:200px"><canvas id="revChart"></canvas></div></div>
+    <div class="card" style="border-top:2px solid var(--b)"><div class="ctit" style="color:var(--b)">Operational Improvement Model — Year 1 Targets</div><div style="position:relative;height:200px"><canvas id="opsChart"></canvas></div></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g)">
+    <div class="ctit" style="color:var(--g)">Josh's Documented Financial Impact — The Evidence Base</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Metric</th><th>Company</th><th>Before</th><th>After Josh</th><th>Timeline</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Revenue Growth</td><td style="color:var(--mu)">Optimum Diagnostics</td><td>Baseline</td><td style="color:var(--g);font-weight:700">+50% in 12 months</td><td style="font-size:10px;color:var(--su)">Year 1</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Operating Margin</td><td style="color:var(--mu)">Optimum Diagnostics</td><td>-11%</td><td style="color:var(--g);font-weight:700">+37% (48-pt swing)</td><td style="font-size:10px;color:var(--su)">3 years</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Client Retention</td><td style="color:var(--mu)">Optimum Diagnostics</td><td>Baseline</td><td style="color:var(--g);font-weight:700">+40%+</td><td style="font-size:10px;color:var(--su)">Year 2</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Operating Cost Reduction</td><td style="color:var(--mu)">2nd Home AMDC</td><td>High cost base</td><td style="color:var(--g);font-weight:700">-20%+ (funded 5 acquisitions)</td><td style="font-size:10px;color:var(--su)">2 years</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Ancillary Revenue Created</td><td style="color:var(--mu)">2nd Home AMDC</td><td>$0</td><td style="color:var(--g);font-weight:700">+$400K annual (new income stream)</td><td style="font-size:10px;color:var(--su)">Year 1</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Facility Footprint</td><td style="color:var(--mu)">2nd Home AMDC</td><td>Starting base</td><td style="color:var(--g);font-weight:700">7 facilities built/acquired</td><td style="font-size:10px;color:var(--su)">10 years</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Labor Cost Savings</td><td style="color:var(--mu)">2nd Home AMDC</td><td>Union threat</td><td style="color:var(--g);font-weight:700">$500K+/yr saved</td><td style="font-size:10px;color:var(--su)">Ongoing</td></tr>
+    </tbody></table></div>
+  </div>
+</div>
+</div>
+
+<!-- SCALING PLAN -->
+<div id="pg-scale" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Strategic Expansion Plan</div>
+  <h2>Scaling Across Multiple Service Lines — Josh's Playbook</h2>
+  <p class="sub">The posting calls for a COO who can "lead key strategic and growth initiatives" and scale "across multiple service lines." Josh's approach: build the operational backbone first, then use it as the launchpad for each new service line and geographic expansion. Scale what works before adding complexity.</p>
+
+  <div class="strat-grid">
+    <div class="strat-card" style="border-top:2px solid var(--t)"><div style="font-size:24px;margin-bottom:10px;color:var(--t)">◆</div><div class="strat-name">Service Line Expansion Strategy</div><ul class="strat-items"><li><span style="color:var(--t)">›</span>Evaluate current service lines: which have the highest margin, highest retention, and easiest clinical reproducibility?</li><li><span style="color:var(--t)">›</span>Build operational playbook for each new service line before adding clients — SOPs, staffing model, billing workflow, quality metrics</li><li><span style="color:var(--t)">›</span>Prioritize expansion into service lines that leverage existing SNF facility relationships — cross-sell to the same DON and administrator</li><li><span style="color:var(--t)">›</span>Josh's Optimum Diagnostics model: launched multiple diagnostic service types using the same mobile infrastructure and SNF relationships</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--b)"><div style="font-size:24px;margin-bottom:10px;color:var(--b)">◈</div><div class="strat-name">Geographic Expansion</div><ul class="strat-items"><li><span style="color:var(--b)">›</span>Build geographic expansion playbook: operational requirements for entering a new market before signing the first facility</li><li><span style="color:var(--b)">›</span>Target adjacent markets first — regional density creates operational efficiency (travel time, staffing, supply chain)</li><li><span style="color:var(--b)">›</span>Josh built 7 NJ facilities statewide — geographic expansion in healthcare is his operating background</li><li><span style="color:var(--b)">›</span>Evaluate acquisition opportunities for regional service companies as acceleration strategy vs. organic growth</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--g)"><div style="font-size:24px;margin-bottom:10px;color:var(--g)">◉</div><div class="strat-name">SNF Client Acquisition Support</div><ul class="strat-items"><li><span style="color:var(--g)">›</span>Build COO-level facility relationship management infrastructure — Josh calls on SNF administrators at the COO level, not the sales level</li><li><span style="color:var(--g)">›</span>Develop outcomes data and ROI reporting for facility clients — give administrators the data they need to justify the relationship internally</li><li><span style="color:var(--g)">›</span>Build referral program: leverage existing facility administrator relationships to source introductions to new facilities</li><li><span style="color:var(--g)">›</span>Josh's SNF ancillary experience means he can walk into a DON meeting and speak to patient care outcomes, not just price</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--v)"><div style="font-size:24px;margin-bottom:10px;color:var(--v)">◐</div><div class="strat-name">M&A and Partnership Evaluation</div><ul class="strat-items"><li><span style="color:var(--v)">›</span>"Successful track record in scaling operational environments" — Josh has used M&A to scale healthcare companies throughout his career</li><li><span style="color:var(--v)">›</span>Evaluate tuck-in acquisitions of competing or complementary SNF ancillary service companies in target markets</li><li><span style="color:var(--v)">›</span>Build partnership model with SNF operators: preferred vendor agreements, co-marketing, and volume-based pricing structures</li><li><span style="color:var(--v)">›</span>Josh's HCG/Senior Living Realty work: actively evaluating healthcare service company acquisitions with investor capital</li></ul></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">Service Line Expansion Prioritization Framework</div>
+    <div class="roi-note"><span>Josh's Standard: </span>No new service line launched without a written operational playbook, a staffing model, a billing workflow, and at least one pilot client to validate quality before full rollout. This is how you scale fast without losing what made you good.</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Service Line</th><th>Margin Profile</th><th>Operational Complexity</th><th>SNF Demand</th><th>Cross-Sell Opportunity</th><th>Priority</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Therapy (PT/OT/SLP)</td><td style="color:var(--t)">High</td><td style="color:var(--su);font-size:10px">High (credentialing, scheduling)</td><td style="color:var(--su);font-size:10px">Highest — every SNF needs therapy</td><td style="color:var(--su);font-size:10px">Strong — same facility team</td><td><span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;background:rgba(200,120,42,.1);border:1px solid rgba(200,120,42,.3);color:var(--t)">TIER 1</span></td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Healthcare Staffing</td><td style="color:var(--t)">Medium-High</td><td style="color:var(--su);font-size:10px">High (volume, compliance, float pool)</td><td style="color:var(--su);font-size:10px">Critical — staffing shortage ongoing</td><td style="color:var(--su);font-size:10px">Excellent — same DON buyer</td><td><span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;background:rgba(200,120,42,.1);border:1px solid rgba(200,120,42,.3);color:var(--t)">TIER 1</span></td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Behavioral Health / Geri-Psych</td><td style="color:var(--b)">High</td><td style="color:var(--su);font-size:10px">Low (contract group; per-visit billing)</td><td style="color:var(--su);font-size:10px">High — underserved in most SNFs</td><td style="color:var(--su);font-size:10px">Strong — quality metric improvement</td><td><span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;background:rgba(200,120,42,.1);border:1px solid rgba(200,120,42,.3);color:var(--t)">TIER 1</span></td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Mobile Diagnostics</td><td style="color:var(--b)">Medium-High</td><td style="color:var(--su);font-size:10px">Medium (equipment, tech, routing)</td><td style="color:var(--su);font-size:10px">High — reduces transfers, survey risk</td><td style="color:var(--su);font-size:10px">Good — adds value to existing clients</td><td><span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;background:rgba(26,104,181,.1);border:1px solid rgba(26,104,181,.3);color:var(--b)">TIER 2</span></td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Pharmacy / Infusion</td><td style="color:var(--b)">High</td><td style="color:var(--su);font-size:10px">Very High (licensing, formulary, compliance)</td><td style="color:var(--su);font-size:10px">High — every SNF has LTC pharmacy</td><td style="color:var(--su);font-size:10px">Excellent — deepens relationship</td><td><span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;background:rgba(26,104,181,.1);border:1px solid rgba(26,104,181,.3);color:var(--b)">TIER 2</span></td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Revenue Cycle / Billing</td><td style="color:var(--g)">High (recurring)</td><td style="color:var(--su);font-size:10px">Medium (software, compliance, training)</td><td style="color:var(--su);font-size:10px">Growing — RCM outsourcing increasing</td><td style="color:var(--su);font-size:10px">Strong — same CFO buyer at facility</td><td><span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;background:rgba(26,152,96,.1);border:1px solid rgba(26,152,96,.3);color:var(--g)">EVALUATE</span></td></tr>
+    </tbody></table></div>
+  </div>
+</div>
+</div>
+
+<!-- ROADMAP -->
+<div id="pg-road" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Strategic Roadmap</div>
+  <h2>Josh's 36-Month COO Impact Plan</h2>
+  <p class="sub">A fast-growing SNF ancillary service provider needs a COO who can both hold the operation together and drive it forward simultaneously. This is the phased execution plan: build the backbone in Year 1, use it for aggressive expansion in Year 2, and establish market leadership by Year 3.</p>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Revenue, Facility Count & Service Lines — 36-Month Trajectory</div>
+    <div style="position:relative;height:200px"><canvas id="roadChart"></canvas></div>
+  </div>
+
+  <div class="phase-card"><div class="ph" style="background:linear-gradient(90deg,rgba(200,120,42,.1),transparent);border-bottom:1px solid rgba(200,120,42,.2)"><div class="pnum" style="background:rgba(200,120,42,.12);border:2px solid var(--t);color:var(--t)">1</div><div><div class="ptag" style="color:var(--t)">Year 1 · Operational Foundation + Quick Wins</div><div class="pname">Build What Enables the Growth. Deliver Early Results.</div></div></div><div class="pb">
+    <div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Complete operational assessment: service delivery quality, billing performance, team structure, client satisfaction</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Install KPI dashboard and monthly reporting framework — visibility that didn't exist before Josh arrived</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Build SOPs for all critical operational workflows: service delivery, scheduling, billing, compliance, onboarding</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Achieve measurable cost reduction (10–20%) through process improvement — fund expansion from operational efficiency</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Add 5–10 new facility contracts with existing service lines — prove operational infrastructure can support growth</div></div>
+  </div></div>
+
+  <div class="phase-card"><div class="ph" style="background:linear-gradient(90deg,rgba(26,104,181,.1),transparent);border-bottom:1px solid rgba(26,104,181,.2)"><div class="pnum" style="background:rgba(26,104,181,.12);border:2px solid var(--b);color:var(--b)">2</div><div><div class="ptag" style="color:var(--b)">Year 2 · Service Line Expansion + Geographic Growth</div><div class="pname">Use the Infrastructure. Scale Aggressively.</div></div></div><div class="pb">
+    <div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Launch first new service line — operational playbook pre-built, pilot client validated, full rollout by Q2</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Enter 1–2 new geographic markets — regional density strategy, adjacency to existing facilities</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Revenue growth 30–50% over Year 1 baseline — operational leverage from systems built in Year 1</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Team scaled to support expansion — management layer installed, hiring infrastructure built</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">First M&A target evaluated or acquired — accelerate geographic entry vs. organic build decision made</div></div>
+  </div></div>
+
+  <div class="phase-card" style="margin-bottom:22px"><div class="ph" style="background:linear-gradient(90deg,rgba(26,152,96,.1),transparent);border-bottom:1px solid rgba(26,152,96,.2)"><div class="pnum" style="background:rgba(26,152,96,.12);border:2px solid var(--g);color:var(--g)">3</div><div><div class="ptag" style="color:var(--g)">Year 3 · Market Leadership + Platform Scale</div><div class="pname">The Recognized SNF Service Partner in the Region.</div></div></div><div class="pb">
+    <div class="ms"><div class="msdot" style="background:var(--g)"></div><div class="mstxt">3+ service lines operational — company positioned as full-service SNF partner, not a point solution</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--g)"></div><div class="mstxt">Revenue 3–5× Year 1 baseline — operational platform supports scale without proportional cost growth</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--g)"></div><div class="mstxt">Client retention >93% — service quality and relationship depth create defensible competitive moat</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--g)"></div><div class="mstxt">Management bench is deep — Josh has hired and developed the next layer of operational leaders</div></div>
+    <div class="ms"><div class="msdot" style="background:var(--g)"></div><div class="mstxt">Financial infrastructure supports institutional capital conversation if ownership desires recapitalization or exit</div></div>
+  </div></div>
+
+  <div class="card" style="border-top:2px solid var(--v);margin-bottom:22px">
+    <div class="ctit" style="color:var(--v)">Why This Role Is Right for Josh at This Stage of His Career</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--t);margin-bottom:5px">The Experience Fit Is Exact</div><p style="font-size:11px;color:var(--mu);line-height:1.55">This isn't a stretch for Josh — it's a direct application of 20 years of work. He has been the COO of an ancillary healthcare service company (2nd Home). He has founded and run a SNF-facing ancillary service company (Optimum Diagnostics). He has acquired and operated senior care assets (HCG). The combination is rare in any candidate.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--b);margin-bottom:5px">Build, Not Manage</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Josh performs best when there is something to build — systems, teams, infrastructure, and culture that didn't exist before. A fast-growing SNF ancillary service company needing its first serious COO is exactly the environment where Josh creates the most value.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--g);margin-bottom:5px">NY/NJ Is His Market</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Via Bhired NYC, this role is almost certainly in the NY/NJ market — where Josh has operated for his entire career. His SNF facility relationships, regulatory network, and professional community in this geography are a direct competitive advantage that no out-of-market candidate can replicate.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--v);margin-bottom:5px">The COO Mandate Matches His Strengths</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Oversee operations, drive strategic expansion, scale across service lines, build systems, develop teams — this is a list of Josh's documented career accomplishments, not aspirational goals. The posting was written for someone like Josh.</p></div>
+    </div>
+  </div>
+
+  <div class="thesis"><div class="thlbl">JOSH GREENBAUM · CLOSING STATEMENT</div><p class="thq">"I've spent 20 years in SNF and ancillary healthcare services — building facilities, running diagnostic and pharmacy service businesses that served SNF patients, and acquiring and operating senior care assets. I know what SNF administrators need from their service partners, and I know how to build the operational backbone that lets a fast-growing company scale without losing what makes it good. This COO role is the natural next application of everything I've built."</p><div class="thatr">— Josh Greenbaum, MHA · Candidate for COO · Fast-Growing SNF Service Provider · via Bhired NYC</div></div>
+</div>
+</div>
+
+<script>
+var CB={};
+function goPg(id){
+  document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('on')});
+  document.querySelectorAll('nav .nl button').forEach(function(b){b.classList.remove('on')});
+  var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('on');
+  var nb=document.getElementById('nb-'+id);if(nb)nb.classList.add('on');
+  window.scrollTo(0,0);
+  if(id==='dash'&&!CB.dash)buildDash();
+  if(id==='road'&&!CB.road)buildRoad();
+}
+
+var matchData=[
+  {req:'Ancillary SNF experience required',josh:'Optimum Diagnostics: mobile diagnostic company delivering services to SNFs — textbook SNF ancillary service model. 2nd Home AMDC: delivered ancillary medical/therapeutic services to the same SNF patient population. Community Care: long-term care pharmacy services to healthcare facility residents.',score:'DIRECT MATCH'},
+  {req:'Overseeing and optimizing company-wide operations',josh:'"Managed $15M annual budget with full P&L responsibility." "Overseeing 250 employees across 7 facilities." "Reduced expenses 20%+." Full operational oversight at CEO and COO level across multiple healthcare companies.',score:'EXCEEDS'},
+  {req:'Leading key strategic and growth initiatives',josh:'"Drove 50% revenue growth in one year." "Developed, financed, and built 7 healthcare facilities statewide." "Evaluated and pursued M&A opportunities." CEO and COO-level growth strategy execution across 20 years.',score:'EXCEEDS'},
+  {req:'Managing departmental KPIs and operational workflows',josh:'"Overseeing performance analytics and brand consistency across all markets." P&L management with full budget accountability. Built KPI-driven operations across 7 facilities. Financial and operational reporting at CEO and COO level.',score:'DIRECT MATCH'},
+  {req:'Consistent, high-quality service delivery to client facilities',josh:'"Increased client retention 40%+." "+4% through ancillary service creation." Service quality and client retention are documented outcomes across multiple companies in ancillary healthcare service environments.',score:'DIRECT MATCH'},
+  {req:'Building systems and infrastructure to support scaling',josh:'"Built 7 healthcare facilities statewide." "Restructured corporate structure." "Implemented systems integration." Josh has built healthcare operational infrastructure from scratch at multiple companies — this is his career core competency.',score:'EXCEEDS'},
+  {req:'Proven executive-level operations leadership',josh:'CEO × 3 (Community Care, Optimum Diagnostics, HCG/Senior Living Realty). COO (2nd Home AMDC — 250 employees, $15M P&L, 7 facilities). VP Marketing & Partnerships (Honor Health Network). 20+ years C-suite and senior executive leadership.',score:'EXCEEDS'},
+  {req:'Strong strategic planning, analytical & organizational skills',josh:'"Turned margins -11% → +37%." "16% NOI improvement, 20% above forecast." "Completed feasibility studies for each acquisition." Data-driven strategic planning with documented financial outcomes throughout career.',score:'EXCEEDS'},
+  {req:'Successful track record in scaling operational environments',josh:'"50% revenue growth in one year." "5 acquisitions funded and integrated." "7 facilities built statewide." "Led lobbying coalitions at local, state, and federal levels." Scale is the throughline of Josh\'s entire career.',score:'EXCEEDS'},
+  {req:'Ability to lead, mentor, and develop high-performing teams',josh:'"250 employees across 7 facilities." "Negotiated contracts with 250 employees, avoiding unionization, saving $500K+." "Led team and budget management." Team leadership and development at scale throughout career.',score:'DIRECT MATCH'}
+];
+
+var respsData=[
+  {icon:'◆',c:'#C8782A',nm:'Oversee and Optimize Company-Wide Operations',v:'"Overseeing and optimizing company-wide operations" — full visibility into every service line, every facility client, and every department.',exec:['Complete operational assessment in Days 1–30: service delivery quality, billing performance, staffing utilization, and compliance status','Build COO operating rhythm: weekly department leader standups, monthly P&L reviews, quarterly strategic assessments','Install performance management across all departments — clear KPIs, accountability, and consequence management','Identify top 3 operational inefficiencies in first 60 days and execute targeted improvement initiatives']},
+  {icon:'◈',c:'#1A68B5',nm:'Lead Key Strategic and Growth Initiatives',v:'"Leading key strategic and growth initiatives" — from new service line evaluation to facility expansion to partnership development.',exec:['Develop 12-month growth roadmap in collaboration with executive leadership — new service lines, new geographies, new client acquisition targets','Evaluate M&A opportunities for adjacent service companies that accelerate expansion vs. organic build','Build preferred vendor partnerships with SNF groups and regional operators — volume agreements that create predictable growth','Lead service line expansion: operational playbook before first client, pilot validation before full rollout']},
+  {icon:'◉',c:'#1A9860',nm:'Manage Departmental KPIs and Operational Workflows',v:'"Managing departmental KPIs and operational workflows" — data-driven operations across all service lines.',exec:['Install service delivery KPI dashboard: on-time %, quality scores, client satisfaction, billing performance per service line','Weekly department review cadence: each department leader presents KPIs, flags issues, and owns action plans','Build financial controls: monthly P&L by service line and by client, billing accuracy tracking, AR management','Automate reporting where possible — reduce time leaders spend building reports, increase time spent on performance improvement']},
+  {icon:'◇',c:'#6040C0',nm:'Build Systems and Infrastructure for Continued Scaling',v:'"Building systems and infrastructure to support continued scaling" — the operational backbone the company needs to grow from current size to 3–5×.',exec:['Design the org structure for 3× current revenue — what roles, spans of control, and management layers are needed?','Build client onboarding playbook: consistent, high-quality service launch for every new facility contract, every time','Create hiring infrastructure: job descriptions, screening criteria, onboarding curriculum for every role — ready to hire on demand','Evaluate and upgrade technology stack: scheduling software, billing platform, client portal, and HR system for scale']}
+];
+
+var qwins=[
+  {period:'Days 1–30',c:'#C8782A',items:['Interview every department leader: understand the operation from the inside before making any changes','Review all client facility contracts: scope, pricing, quality standards, and renewal timing','Assess billing performance: collection rates, AR days, and denial rates per service line','Identify top 3 operational risks — present diagnostic memo to executive leadership at Day 30']},
+  {period:'Days 31–60',c:'#1A68B5',items:['Assess leadership team: right people in right roles, clear accountability, performance gaps identified','Launch KPI dashboard — even rough initial data establishes the baseline for improvement','Begin SOPs for highest-volume operational workflows: service delivery scheduling, client onboarding, quality checks','Identify first quick-win operational improvement: one targeted fix that generates visible results by Day 90']},
+  {period:'Days 61–90',c:'#1A9860',items:['Deliver first clean operational report to executive leadership — establishes COO reporting standard','Execute quick-win operational improvement — show measurable progress within 90 days','Present 12-month strategic plan: growth targets, service line expansion sequencing, operational investment priorities','Build the Year 1 hiring plan — what headcount does the company need to hit its growth targets?']}
+];
+
+var ancillaryActions=[
+  {a:'SNF Client Facility Meetings (Week 2)',det:'Meet personally with the DON or administrator at every active client facility. Understand their experience with the company\'s services, what they need more of, and what risks they see. This intelligence drives every operational priority.',due:'Month 1',c:'#C8782A'},
+  {a:'Service Quality Audit (Week 3)',det:'Evaluate service delivery quality at 5 client facilities using objective measures: on-time delivery, staff qualifications, documentation quality, and client complaint history. Identify service quality gaps immediately.',due:'Month 1',c:'#1A68B5'},
+  {a:'Billing Performance Review (Week 2)',det:'Pull 90-day billing data: clean claim rates, denial rates, AR aging, and net collection rates per service line. SNF ancillary billing has specific Medicare Part B complexity — identify where revenue is leaking.',due:'Month 1',c:'#1A9860'},
+  {a:'Competitor Landscape Map (Month 2)',det:'Map the competitive environment: which other SNF ancillary service companies are serving the same facilities? What are they offering that the company doesn\'t? What facility contracts are at risk from competitors?',due:'Month 2',c:'#B04068'},
+  {a:'New Service Line Evaluation (Month 2)',det:'Evaluate the top 2 new service line candidates: build financial model, assess operational complexity, estimate launch timeline, and present recommendation to executive leadership with priority ranking.',due:'Month 2',c:'#6040C0'},
+  {a:'Preferred Vendor Agreements (Month 3)',det:'Initiate conversations with 3–5 SNF groups or regional operators about preferred vendor agreements. Volume commitments in exchange for dedicated staffing, priority scheduling, and favorable pricing — builds predictable growth.',due:'Month 3',c:'#C8782A'}
+];
+
+var opsActions=[
+  {a:'Operational Assessment Memo (Day 30)',det:'Deliver written diagnostic to executive leadership: current state of operations, top 3 risks, top 3 opportunities, and recommended priority order for Year 1 COO initiatives. This document becomes the governance reference.',due:'Month 1',c:'#C8782A'},
+  {a:'KPI Dashboard Build (Day 45)',det:'Install baseline KPI tracking for all service lines: service delivery quality, billing performance, staff utilization, and client satisfaction. Even imperfect initial data is better than no data.',due:'Month 2',c:'#1A68B5'},
+  {a:'Team Assessment (Day 60)',det:'1:1 with every direct report and department leader. Assess capability, capacity, and alignment. Determine who is in the right seat, who needs development, and which roles need to be created for the next growth phase.',due:'Month 2',c:'#1A9860'},
+  {a:'First SOP Package (Month 2)',det:'Complete SOPs for the 3 highest-volume workflows: service scheduling, client onboarding, and billing submission. These become the training foundation and the quality standard.',due:'Month 2',c:'#B04068'},
+  {a:'P&L by Service Line (Month 3)',det:'Deliver first monthly P&L broken down by service line and by client facility. This data is essential for pricing new contracts profitably and identifying which service lines to grow fastest.',due:'Month 3',c:'#6040C0'},
+  {a:'12-Month Strategic Plan (Day 90)',det:'Present comprehensive growth plan to executive leadership: service line expansion sequence, new market targets, hiring plan, technology investments, and M&A evaluation timeline. Get alignment before executing.',due:'Month 3',c:'#C8782A'}
+];
+
+function h(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+(function(){var tb=document.getElementById('match-tbody');matchData.forEach(function(m){var sc=m.score==='EXCEEDS'?'#1A9860':'#C8782A';tb.innerHTML+='<tr><td style="font-weight:600;color:var(--tx)">'+m.req+'</td><td style="color:#C8A878">'+m.josh+'</td><td><span style="font-family:\'JetBrains Mono\',monospace;font-size:8px;letter-spacing:.07em;border-radius:4px;padding:3px 8px;background:'+sc+'18;border:1px solid '+sc+'45;color:'+sc+'">'+m.score+'</span></td></tr>';});})();
+
+(function(){var el=document.getElementById('resps-el');respsData.forEach(function(r){var li=r.exec.map(function(x){return '<li><span style="color:'+r.c+'">›</span>'+h(x)+'</li>';}).join('');el.innerHTML+='<div class="resp-card" style="margin-bottom:12px"><div class="rh" style="background:'+r.c+'14;border-color:'+r.c+'30"><div class="ri" style="color:'+r.c+'">'+r.icon+'</div><div class="rn">'+r.nm+'</div></div><div class="rb"><div><div class="rlbl" style="color:'+r.c+'">FROM THE POSTING</div><p class="rverb" style="border-color:'+r.c+'">'+r.v+'</p></div><div><div class="rlbl" style="color:#A08050">JOSH\'S EXECUTION APPROACH</div><ul class="rexec">'+li+'</ul></div></div></div>';});})();
+
+(function(){var el=document.getElementById('qw-el');qwins.forEach(function(q){var li=q.items.map(function(x){return '<li><span style="color:'+q.c+'">›</span>'+h(x)+'</li>';}).join('');el.innerHTML+='<div class="qwc" style="border-top:2px solid '+q.c+'"><div class="qwp" style="color:'+q.c+'">'+q.period+'</div><ul class="qwl">'+li+'</ul></div>';});})();
+
+(function(){var el=document.getElementById('ancillary-actions-el');ancillaryActions.forEach(function(a){el.innerHTML+='<div class="acard" style="border-left:3px solid '+a.c+'"><div class="atop"><div class="anm">'+a.a+'</div><div class="adu" style="color:'+a.c+'">'+a.due+'</div></div><p class="adsc">'+a.det+'</p></div>';});})();
+
+(function(){var el=document.getElementById('ops-actions-el');opsActions.forEach(function(a){el.innerHTML+='<div class="acard" style="border-left:3px solid '+a.c+'"><div class="atop"><div class="anm">'+a.a+'</div><div class="adu" style="color:'+a.c+'">'+a.due+'</div></div><p class="adsc">'+a.det+'</p></div>';});})();
+
+function buildDash(){
+  CB.dash=true;
+  var grid={color:'rgba(30,20,8,.8)',drawBorder:false};
+  var ticks={color:'#A08050',font:{size:10}};
+  new Chart(document.getElementById('revChart'),{type:'line',data:{labels:['Baseline','Yr 1','Yr 2','Yr 3'],datasets:[{label:'Revenue (indexed)',data:[100,140,195,275],borderColor:'#C8782A',backgroundColor:'rgba(200,120,42,.1)',fill:true,tension:.4,pointBackgroundColor:'#C8782A',pointRadius:5},{label:'Josh\'s Target',data:[100,150,210,300],borderColor:'#1A68B5',borderDash:[5,4],fill:false,tension:.4,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#A08050',font:{size:10},boxWidth:10}}},scales:{x:{grid:grid,ticks:ticks},y:{grid:grid,ticks:{color:'#A08050',font:{size:10},callback:function(v){return v+' idx'}}}}}});
+  new Chart(document.getElementById('opsChart'),{type:'bar',data:{labels:['Op. Margin','Client Retention','Staff Util.','Service On-Time'],datasets:[{label:'Current (est.)',data:[12,82,72,91],backgroundColor:'rgba(200,120,42,.4)',borderRadius:4},{label:'Josh Year 1 Target',data:[22,90,86,97],backgroundColor:'rgba(26,104,181,.6)',borderRadius:4},{label:'Josh Year 3 Target',data:[32,94,90,98],backgroundColor:'rgba(26,152,96,.7)',borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#A08050',font:{size:10},boxWidth:10}}},scales:{x:{grid:grid,ticks:{color:'#A08050',font:{size:9}}},y:{grid:grid,ticks:{color:'#A08050',font:{size:10},callback:function(v){return v+'%'}}}}}});
+}
+
+function buildRoad(){
+  CB.road=true;
+  var grid={color:'rgba(30,20,8,.8)',drawBorder:false};
+  var ticks={color:'#A08050',font:{size:10}};
+  new Chart(document.getElementById('roadChart'),{type:'line',data:{labels:['Now','Mo 6','Mo 12','Mo 18','Mo 24','Mo 30','Mo 36'],datasets:[{label:'Revenue (indexed)',data:[100,115,145,185,230,265,300],borderColor:'#C8782A',backgroundColor:'rgba(200,120,42,.1)',fill:true,tension:.4,pointBackgroundColor:'#C8782A',pointRadius:5},{label:'Active Facility Clients',data:[100,110,130,155,180,210,240],borderColor:'#1A68B5',borderDash:[4,4],fill:false,tension:.4,pointRadius:4,pointBackgroundColor:'#1A68B5'},{label:'Service Lines Active',data:[2,2,3,3,4,4,5],borderColor:'#1A9860',fill:false,tension:.4,pointRadius:4,pointBackgroundColor:'#1A9860'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#A08050',font:{size:10},boxWidth:10}}},scales:{x:{grid:grid,ticks:ticks},y:{grid:grid,ticks:ticks}}}});
+}
+</script>
+</body>
+</html>
